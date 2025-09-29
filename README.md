@@ -6,8 +6,10 @@ Here you will find my answers to the coding challenge. I start with requirements
 
 - docker
 - iproute2mac
+- aws cli
+- terraform
 
-## Docker container
+## I. Docker container
 
 I am using official nginx image for the "Hello world!" part - https://hub.docker.com/_/nginx
 
@@ -31,4 +33,6 @@ docker build -t my-nginx .
 docker run -p 8080:80 my-nginx
 ```
 
-3. Go to http://localhost:8080/ or http://<your.local.ip>:8080/
+3. Go to http://localhost:8080/ or http://<your.internal.ip>:8080/ (from any device on your local network)
+
+## II. K8s
